@@ -1,0 +1,26 @@
+.head-nav__content {
+    display: flex;
+    padding: 20px;
+}
+.head-logo {
+    font-size: 40px;
+    padding: 5px 15px;
+    color:var(--default-color)
+}
+h4.h-nav {
+    font-size: 16px;
+}
+.head-text {
+    padding-left: 5px;
+    font-size: 14px;
+}
+.head-nav {
+    padding-top:20px;
+    
+}
+.mg-5 {
+    margin-left:10px
+}
+.arrow-item {
+    margin-right: 10px;
+}
