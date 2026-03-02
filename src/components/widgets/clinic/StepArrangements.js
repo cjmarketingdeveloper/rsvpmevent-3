@@ -16,7 +16,7 @@ function StepArrangements({setStep, pharmacy, personInformation,
             
             const formData = new FormData();
                    
-                formData.append("pharmacycode", pharmacy.pharmacycode);
+                formData.append("pharmacycode", pharmacy.code);
                 formData.append("name", person.name);
                 formData.append("surname", person.surname);
                 formData.append("email", person.email);
@@ -37,11 +37,11 @@ function StepArrangements({setStep, pharmacy, personInformation,
                 formData.append("details", "");
                 // 3. Append Arrays (Backend usually expects them stringified or as multiple entries)
                 formData.append("events", eventCode);
-                formData.append("profession", [clinicDesignation]);
+                formData.append("profession", clinicDesignation);
                 formData.append("accomodationType", accomodationType);
 
-                formData.append("tradeshow", null);
-                formData.append("galaDinner", null);
+                formData.append("tradeshow", false);
+                formData.append("galaDinner", false);
                 formData.append("preferredPartner", personAccomPrefferedName); 
                 formData.append("preferredPartnerPharm", personAccomPrefferedPharmacy);
                 formData.append("accommodation", persSpecialArrange);

@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import * as CONSTANTS from "../../../CONSTANTS";
 
-function Step3({setStep, clinicDesignation, setClinicDesignation}) {
+function Step3({setStep, clinicDesignation, setClinicDesignation, setPCDTOption}) {
 
   return (
     <div className="card-step">
@@ -15,8 +15,11 @@ function Step3({setStep, clinicDesignation, setClinicDesignation}) {
                 <button 
                         type="button"
                         className={`btn ${clinicDesignation === 'PCDT Pharmacist' ? 'btn-selected' : 'btn-outline-simple'} btn-full mb-3`}
-                        onClick={() => setClinicDesignation('PCDT Pharmacist')}
-                      
+                        onClick={() => {
+                                setClinicDesignation('PCDT Pharmacist');
+                                setPCDTOption(true);
+                             }
+                        }                      
                     >
                     PCDT Pharmacist
                 </button>
@@ -24,8 +27,11 @@ function Step3({setStep, clinicDesignation, setClinicDesignation}) {
                 <button 
                         type="button"
                         className={`btn ${clinicDesignation === 'Clinic Nurse' ? 'btn-selected' : 'btn-outline-simple'} btn-full mb-3`}
-                        onClick={() => setClinicDesignation('Clinic Nurse')}
-                       
+                        onClick={() => {
+                                setClinicDesignation('Clinic Nurse');
+                                setPCDTOption(false);
+                            }
+                        }
                     >
                     Clinic Nurse
                 </button>

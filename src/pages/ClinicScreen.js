@@ -128,6 +128,7 @@ function ClinicScreen() {
                                 setStep={handleNext}
                                 setClinicDesignation={setClinicDesignation}
                                 clinicDesignation={clinicDesignation}
+                                setPCDTOption={setPCDTOption}
                               />
              }
                {
@@ -136,13 +137,10 @@ function ClinicScreen() {
                                 person={person}
                                 setPerson={setPerson}
                               />
-             }
-
+            }
             {
                   step === 5 && <Step5 
                                     setStep={handleNext}
-                                    pcdtOption={pcdtOption}
-                                    setPCDTOption={setPCDTOption}
                                     personInformation={personInformation}
                                     setPersonDietary={setPersonDietary}
                                     needFlight={needFlight}
@@ -163,8 +161,7 @@ function ClinicScreen() {
                                     setPersonAccomPrefferedName={setPersonAccomPrefferedName}
                                     setPersonAccomPrefferedPharmacy={setPersonAccomPrefferedPharmacy}
                                     setPersSpecialArrange={setPersSpecialArrange}
-                                    />
-                                  
+                                    />                     
               }
                
                {

@@ -74,7 +74,7 @@ function StepArrangements({setStep, setAdditionalNotes
                 formData.append("profileName", "Franchisee");
                 formData.append("spouseNumber", hasSpouse ? spouse.phonenumber : '');
                 formData.append("workingPharm", false);
-                formData.append("spouseVariation", false);
+                formData.append("spouseVariation", hasSpouse ? true : false);
                 // 3. Append Arrays (Backend usually expects them stringified or as multiple entries)
                 formData.append("events", eventCodes);
                 formData.append("profession", selectedProfessions);
