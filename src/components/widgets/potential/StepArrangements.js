@@ -45,7 +45,7 @@ function StepArrangements({setStep, setAdditionalNotes
                 formData.append("flight", needFlight);
                 formData.append("personAirport", needFlight ? personAirport : '');
                 formData.append("profileId", "69848b1d0ca620e036ea3b87");
-                formData.append("profileName", "Potential Franchisee");
+                formData.append("profileName", "Potential");
                 formData.append("spouseNumber", hasSpouse ? spouse.phonenumber : '');
                 formData.append("workingPharm", false);
                 formData.append("spouseVariation", false);
