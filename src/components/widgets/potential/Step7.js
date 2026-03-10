@@ -30,7 +30,7 @@ function Step7({setStep,
         const listTheDietaries = async () => {
             try{
                 setProcessing(true);
-                console.log(CONSTANTS.API_URL +"settings/list/dietaries/v2");
+                
                 const diet = await axios.get(CONSTANTS.API_URL +"settings/list/dietaries/v2");
         
                 if(diet.data.length > 0){

@@ -16,7 +16,7 @@ function Step7({setStep, spouse, setSpouse}) {
     // Validation Logic
     const isPasswordValid = 
         spouse.password?.length >= 6 && 
-        spouse.password?.length <= 12 &&
+        spouse.password?.length <= 20 &&
         /[a-zA-Z]/.test(spouse.password) && // Has letters
         /\d/.test(spouse.password);         // Has numbers
 

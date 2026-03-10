@@ -16,7 +16,7 @@ function Step4({setStep, person, setPerson}) {
     // Validation Logic
     const isPasswordValid = 
         person.password?.length >= 6 && 
-        person.password?.length <= 12 &&
+        person.password?.length <= 20 &&
         /[a-zA-Z]/.test(person.password) && // Has letters
         /\d/.test(person.password);         // Has numbers
 
