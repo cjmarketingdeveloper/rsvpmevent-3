@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import * as CONSTANTS from "../../../CONSTANTS";
 
-function Step7({ setStep, person, members, setMembers, setDietary, allergies, setAllergies, dietaryOptionList, setDietaryOptionList }) {
+function Step7({ setStep, person, members, setMembers, dietary, setDietary, allergies, setAllergies, dietaryOptionList, setDietaryOptionList }) {
 
     //const [dietaryOptionList, setDietaryOptionList] = useState([]);
     const [currentAllergy, setCurrentAllergy] = useState(""); // Fixed: Changed from [] to ""
@@ -80,7 +80,7 @@ function Step7({ setStep, person, members, setMembers, setDietary, allergies, se
                             <select 
                                 className="form-control" 
                                 onChange={(e) => setDietary(e.target.value)} 
-                                value="69848cb90ca620e036ea3b9e">
+                                value={dietary}>
                                 {dietaryOptionList.map((opt, i) => (
                                     <option key={i} value={opt._id}>{opt.title}</option>
                                 ))}

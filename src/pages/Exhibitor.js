@@ -53,7 +53,7 @@ function Exhibitor() {
     
     const [dietaryOptionList, setDietaryOptionList]                 = useState([]);
 
-    const [dietary, setDietary]                               = useState("");
+    const [dietary, setDietary]                               = useState("69848cb90ca620e036ea3b9e");
     const [allergies, setAllergies]                           = useState([]);
    
     const [standDetails, setStandDetails]                     = useState({
@@ -237,6 +237,7 @@ function Exhibitor() {
                                 person={person}
                                 members={members} 
                                 setMembers={setMembers}
+                                dietary={dietary}
                                 setDietary={setDietary}
                                 allergies={allergies}
                                 setAllergies={setAllergies} 

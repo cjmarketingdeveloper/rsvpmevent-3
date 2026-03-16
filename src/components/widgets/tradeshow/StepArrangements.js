@@ -16,7 +16,7 @@ function StepArrangements({setStep, pharmacy, personInformation,
 
             const eventCodes = selectedEvent.map(obj => obj.eventCode);
                        
-                formData.append("pharmacycode", pharmacy.pharmacycode);
+                formData.append("pharmacycode", pharmacy.code);
                 formData.append("name", person.name);
                 formData.append("surname", person.surname);
                 formData.append("email", person.email);

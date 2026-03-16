@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import * as CONSTANTS from "../../../CONSTANTS";
 
-function Step4({setStep, person, setDietary, allergies, setAllergies, dietaryOptionList, setDietaryOptionList}) {
+function Step4({setStep, person, dietary, setDietary, allergies, setAllergies, dietaryOptionList, setDietaryOptionList}) {
 
     const [currentAllergy, setCurrentAllergy]                       = useState([]);
 
@@ -57,8 +57,12 @@ function Step4({setStep, person, setDietary, allergies, setAllergies, dietaryOpt
                                     <div className="custom-select-wrapper ">
                                         <select 
                                             className="form-control"
-                                            onChange={(e) => setDietary(e.target.value)}
-                                            value="69848cb90ca620e036ea3b9e"
+                                            onChange={(e) => {
+                                                setDietary(e.target.value);
+                                                console.log("Champions");
+                                                console.log(e.target.value);
+                                            }}
+                                            value={dietary}
                                             >
                                             {
                                                     dietaryOptionList.map((dietOption, index) => {
