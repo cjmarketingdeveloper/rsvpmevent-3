@@ -181,6 +181,7 @@ function Potential() {
                                 personInformation={personInformation}
                                 setPersonInformation={setPersonInformation}
                                 setPersonDietary={setPersonDietary}
+                                personDietary={personDietary}
                                 needFlight={needFlight}
                                 setNeedFlight={setNeedFlight}
                                 personClinicEvent={personClinicEvent}
@@ -191,7 +192,7 @@ function Potential() {
                                 goingToGalaDiner={goingToGalaDiner}
                                 setGoingToGalaDiner={setGoingToGalaDiner}
                               />
-             }
+            }
 
             {
                   step === 4 && <Step5 
