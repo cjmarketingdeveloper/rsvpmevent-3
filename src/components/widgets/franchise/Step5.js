@@ -6,7 +6,7 @@ import { FaUpload } from "react-icons/fa";
 
 function Step5({setStep,  
             pcdtOption, setPCDTOption, 
-            personInformation, setPersonInformation, setPersonDietary,
+            personInformation, setPersonInformation, setPersonDietary, personDietary,
             needFlight, setNeedFlight,
             personClinicEvent, setPersonClinicEvent, setPersonAirport,
             goingToTradeshow, setGoingToTradeshow, goingToGalaDiner, setGoingToGalaDiner, questGalaKind
@@ -232,7 +232,7 @@ function Step5({setStep,
                                     <select 
                                         className="form-control"
                                         onChange={(e) => setPersonDietary(e.target.value)}
-                                        value="69848cb90ca620e036ea3b9e"
+                                        value={personDietary}
                                         >
                                         {
                                                 dietaryOptionList.map((dietOption, index) => {

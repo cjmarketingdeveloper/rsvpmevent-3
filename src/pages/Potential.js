@@ -219,6 +219,7 @@ function Potential() {
                               spouseInformation={spouseInformation}
                               setSpouseInformation={setSpouseInformation}
                               setSpouseDietary={setSpouseDietary}
+                              spouseDietary={spouseDietary}
                               spouseNeedFlight={spouseNeedFlight}
                               setSpouseNeedFlight={setSpouseNeedFlight}
                               spouseClinicEvent={spouseClinicEvent}

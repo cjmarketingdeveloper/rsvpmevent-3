@@ -89,7 +89,7 @@ function Step5({setStep,
                                     <select 
                                         className="form-control"
                                         onChange={(e) => setPersonDietary(e.target.value)}
-                                        value="69848cb90ca620e036ea3b9e"
+                                        value={personDietary}
                                         >
                                         {
                                                 dietaryOptionList.map((dietOption, index) => {

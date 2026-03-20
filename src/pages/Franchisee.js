@@ -201,6 +201,7 @@ function Franchisee() {
                                 personInformation={personInformation}
                                 setPersonInformation={setPersonInformation}
                                 setPersonDietary={setPersonDietary}
+                                personDietary={personDietary}
                                 needFlight={needFlight}
                                 setNeedFlight={setNeedFlight}
                                 personClinicEvent={personClinicEvent} 
@@ -239,6 +240,7 @@ function Franchisee() {
                               spouseInformation={spouseInformation}
                               setSpouseInformation={setSpouseInformation}
                               setSpouseDietary={setSpouseDietary}
+                              spouseDietary={spouseDietary}
                               spouseNeedFlight={spouseNeedFlight}
                               setSpouseNeedFlight={setSpouseNeedFlight}
                               spouseClinicEvent={spouseClinicEvent}

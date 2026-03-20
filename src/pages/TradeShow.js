@@ -144,6 +144,7 @@ function TradeShow() {
                                     setPCDTOption={setPCDTOption}
                                     personInformation={personInformation}
                                     setPersonDietary={setPersonDietary}
+                                    personDietary={personDietary}
                                     needFlight={needFlight}
                                     setNeedFlight={setNeedFlight}
                                     setPersonInformation={setPersonInformation}

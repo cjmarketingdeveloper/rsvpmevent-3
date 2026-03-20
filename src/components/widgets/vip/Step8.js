@@ -5,7 +5,7 @@ import * as CONSTANTS from "../../../CONSTANTS";
 import { FaUpload } from "react-icons/fa";
 
 function Step8({setStep,  
-            spouseInformation, setSpouseInformation, setSpouseDietary,
+            spouseInformation, setSpouseInformation, setSpouseDietary, spouseDietary,
             spouseNeedFlight, setSpouseNeedFlight, 
             spouseClinicEvent, setSpouseClinicEvent, setSpouseAirport,
             spouseWorkingPharm, setSpouseWorkingPharm, setSpouseDesignation,
@@ -130,8 +130,9 @@ function Step8({setStep,
                                     <select 
                                         className="form-control"
                                         onChange={(e) => setSpouseDietary(e.target.value)}
+                                        value={spouseDietary}
                                         >
-                                        <option value=""></option>
+                                       
                                         {
                                                 dietaryOptionList.map((dietOption, index) => {
                                                     return <option key={index} value={dietOption._id}>{dietOption.title}</option>

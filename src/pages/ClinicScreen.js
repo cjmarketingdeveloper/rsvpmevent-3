@@ -143,6 +143,7 @@ function ClinicScreen() {
                                     setStep={handleNext}
                                     personInformation={personInformation}
                                     setPersonDietary={setPersonDietary}
+                                    personDietary={personDietary}
                                     needFlight={needFlight}
                                     setNeedFlight={setNeedFlight}
                                     setPersonInformation={setPersonInformation}

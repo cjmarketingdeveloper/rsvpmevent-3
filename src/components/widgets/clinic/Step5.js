@@ -5,7 +5,7 @@ import * as CONSTANTS from "../../../CONSTANTS";
 import { FaUpload } from "react-icons/fa";
 
 function Step5({setStep,  
-            personInformation, setPersonInformation, setPersonDietary,
+            personInformation, setPersonInformation, setPersonDietary, personDietary,
             needFlight, setNeedFlight, setPersonAirport
         }) {
 
@@ -98,7 +98,7 @@ function Step5({setStep,
                                     <select 
                                         className="form-control"
                                         onChange={(e) => setPersonDietary(e.target.value)}
-                                        value="69848cb90ca620e036ea3b9e"
+                                        value={personDietary}
                                         >
                                         {
                                                 dietaryOptionList.map((dietOption, index) => {
